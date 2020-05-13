@@ -17,8 +17,10 @@
           class="boxText h-100 rounded hvr-shrink" 
           (click)="objectColor(item)">
             <div class="year">{{item.year}}</div>
-            <div class="name justify-content-center align-self-center font-weight-bold text-capitalize">{{item.name}}</div>
-            <div class="color text-uppercase">{{item.color}}</div>
+            <div class="box-center">
+              <div class="name justify-content-center align-self-center font-weight-bold text-capitalize">{{item.name}}</div>
+              <div class="color text-uppercase">{{item.color}}</div>
+            </div>
             <div class="pantone text-right">{{item.pantone_value}}</div>
           </div>
         </div>
