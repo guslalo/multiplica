@@ -49,20 +49,16 @@ export class ColorsComponent implements OnInit {
         if (this.number === data.total_pages){
           this.activeNext = true;
           this.color = data.data;
-          this.loading = false;
         } else {
           this.activeNext = false;
           this.color = data.data;
-          this.loading = false;
         }
         if (this.number === data.total_pages -1){
           this.deactivePrev = true;
           this.color = data.data;
-          this.loading = false;
         } else {
           this.color = data.data;
           this.deactivePrev = false;
-          this.loading = false;
         }
       }, 
     error => {
