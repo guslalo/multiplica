@@ -7,6 +7,7 @@ ColorApp Multiplica es una aplicación donde distintos departamentos y diseñado
 - Bootstrap 4
 - HTML 5
 - CSS3 con preprocesador SASS
+- PWA (progressive web app, modo offline e instalable).
 
 # Instalación
 - Clonar repositorio 
@@ -15,4 +16,4 @@ ColorApp Multiplica es una aplicación donde distintos departamentos y diseñado
 - build: ng build --prod
 
 # Url producción
-https://5ebc3d033d23dee61ec48dc8--confident-babbage-21fc9c.netlify.app/
+
