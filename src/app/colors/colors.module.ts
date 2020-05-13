@@ -13,7 +13,6 @@ import { ModalsComponent } from '../shared/modals/modals.component';
 
 //moduls
 import { ClipboardModule } from 'ngx-clipboard';
-import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,7 @@ import { NgxLoadingModule } from 'ngx-loading';
     CommonModule,
     ColorsRoutingModule,
     HttpClientModule,
-    ClipboardModule,
-    NgxLoadingModule.forRoot({})
+    ClipboardModule
   ]
 })
 
