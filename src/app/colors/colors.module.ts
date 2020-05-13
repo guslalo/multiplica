@@ -11,8 +11,9 @@ import { ColorsRoutingModule } from './colors-routing.module';
 import { ColorsComponent } from './colors/colors.component';
 import { ModalsComponent } from '../shared/modals/modals.component';
 
-//clipboard
+//moduls
 import { ClipboardModule } from 'ngx-clipboard';
+import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ClipboardModule } from 'ngx-clipboard';
     CommonModule,
     ColorsRoutingModule,
     HttpClientModule,
-    ClipboardModule
+    ClipboardModule,
+    NgxLoadingModule.forRoot({})
   ]
 })
 
