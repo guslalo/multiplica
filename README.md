@@ -16,4 +16,4 @@ ColorApp Multiplica es una aplicación donde distintos departamentos y diseñado
 - build: ng build --prod
 
 # Url producción
-https://5ebc638ca8798100072afb13--confident-babbage-21fc9c.netlify.app/
+
