@@ -1,6 +1,3 @@
-# Colorapp
-
-
 # Introducción
 ColorApp Multiplica es una aplicación donde distintos departamentos y diseñadores pueden acceder con el fin de obtener información acerca de los colores coportativos de compañía. 
 
