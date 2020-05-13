@@ -9,7 +9,7 @@
    <div class="container-fluid h-100">
     <div class="row h-100">
       <ng-container *ngFor="let item of color">
-        <div class="col-sm-4 p-3" id="{{item.id}}">
+        <div class="col-sm-6 col-md-4 p-3" id="{{item.id}}">
           <div 
           [ngStyle]="{'background-color': item.color}" 
           data-toggle="modal" 
@@ -27,7 +27,7 @@
   </div>
   </section><!--/section-->
   <!--footer-->
-  <footer> 
+  <footer class="pb-4 pb-pd-0"> 
     <div class="container-fluid">
       <div class="row">
         <div class="col-6">
