@@ -1,0 +1,45 @@
+<!--wrap-->
+<div class="container-fluid p-0 wrap">
+  <!--header--> 
+  <header>
+    <h2 class="text-center pt-3 font-weight-bold">Colores</h2>
+  </header><!--/header--> 
+  <!--section-->    
+  <section class="sectionColor"> 
+   <div class="container-fluid h-100">
+    <div class="row h-100">
+      <ng-container *ngFor="let item of color">
+        <div class="col-sm-4 p-3" id="{{item.id}}">
+          <div 
+          [ngStyle]="{'background-color': item.color}" 
+          data-toggle="modal" 
+          data-target="#modal" 
+          class="boxText h-100 rounded hvr-shrink" 
+          (click)="objectColor(item)">
+            <div class="year">{{item.year}}</div>
+            <div class="name justify-content-center align-self-center font-weight-bold text-capitalize">{{item.name}}</div>
+            <div class="color text-uppercase">{{item.color}}</div>
+            <div class="pantone text-right">{{item.pantone_value}}</div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  </section><!--/section-->
+  <!--footer-->
+  <footer> 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <button type="button" class="btn btn-primary" (click)="previousPage()" [disabled]="deactivePrev">Anterior</button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-primary float-right" (click)="nextPage()" [disabled]="activeNext">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </footer><!--/footer-->  
+</div><!--/wrap-->
+        
+
+<app-modals [item]="currentItem"></app-modals>
